@@ -1,9 +1,12 @@
-# wav = specify full path for wav file
-# output = will create folder and place split wavs in there,
+# slice_wav() Arguments
+
+# wav - specify full path for wav file
+# output = Optional - will create folder and place split wavs in there,
 #          or split wavs will be placed in working directory
-# prefix - if you want a prefix in the name of your split wavs,
+# prefix - Optional - if you want a prefix in the name of your split wavs,
 #          otherwise they will be 1.wav through n.wav
-# duration - how long you want the split wav files to be in seconds
+# duration - Optional - how long you want the split wav files to be in seconds
+#            default is 5 mins or 300 seconds
 
 slice_wav <- function(wav, output = getwd(), prefix, duration = 300) {
   require(tuneR)
