@@ -1,3 +1,5 @@
+# Dependencies = tuneR - https://cran.r-project.org/web/packages/tuneR/index.html
+
 # slice_wav() Arguments
 
 # wav - specify full path for wav file
